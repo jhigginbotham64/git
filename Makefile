@@ -278,12 +278,12 @@ all::
 # Define NO_ST_BLOCKS_IN_STRUCT_STAT if your platform does not have st_blocks
 # field that counts the on-disk footprint in 512-byte blocks.
 #
-# Define GNU_ROFF if your target system uses GNU groff.  This forces
-# apostrophes to be ASCII so that cut&pasting examples to the shell
-# will work.
-#
 # Define USE_ASCIIDOCTOR to use Asciidoctor instead of AsciiDoc to build the
 # documentation.
+#
+# Define USE_ASCIIDOCTOR_MANPAGE to use Asciidoctor's manual page backend
+# instead of building manual pages from DocBook (using xmlto).  Has no effect
+# unless USE_ASCIIDOCTOR is set.
 #
 # Define ASCIIDOCTOR_EXTENSIONS_LAB to point to the location of the Asciidoctor
 # Extensions Lab if you have it available.
